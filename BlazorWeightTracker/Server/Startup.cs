@@ -78,6 +78,9 @@ namespace BlazorWeightTracker.Server
                 endpoints.MapControllers();
                 endpoints.MapFallbackToFile("index.html");
             });
+
+            //Set up our automapper configuration
+            AutoMapperConfig.Init();
         }
     }
 }
