@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWeightTracker.Server", "BlazorWeightTracker\Server\BlazorWeightTracker.Server.csproj", "{FA78F97A-83A4-4CC5-BFA2-20BC3F810273}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWeightTracker.Client", "BlazorWeightTracker\Client\BlazorWeightTracker.Client.csproj", "{6CFED1EA-7674-4E00-84FE-CC833007487A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWeightTracker.Shared", "BlazorWeightTracker\Shared\BlazorWeightTracker.Shared.csproj", "{FA1AAF74-7B91-4B87-8487-C07816F062C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA78F97A-83A4-4CC5-BFA2-20BC3F810273}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA78F97A-83A4-4CC5-BFA2-20BC3F810273}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA78F97A-83A4-4CC5-BFA2-20BC3F810273}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA78F97A-83A4-4CC5-BFA2-20BC3F810273}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CFED1EA-7674-4E00-84FE-CC833007487A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CFED1EA-7674-4E00-84FE-CC833007487A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CFED1EA-7674-4E00-84FE-CC833007487A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CFED1EA-7674-4E00-84FE-CC833007487A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA1AAF74-7B91-4B87-8487-C07816F062C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA1AAF74-7B91-4B87-8487-C07816F062C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA1AAF74-7B91-4B87-8487-C07816F062C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA1AAF74-7B91-4B87-8487-C07816F062C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
