@@ -8,3 +8,45 @@
 <AuthorizeView>
     <h3>Hello @context.User.Identity.Name</h3>
 </AuthorizeView>
+
+<Loading IsLoading="@loading" />
+
+@if (!loading)
+{
+    <table class="table table-striped table-hover table-bordered">
+        <thead>
+            <tr>
+                <th>Value</th>
+                <th>Date</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var weight in weights)
+            {
+                <tr>
+                    <td>
+                        <a href="/weight/@weight.WeightId">@weight.Value</a>
+                    </td>
+                    <td>
+                        @weight.Created
+                    </td>
+                    <td>
+                        <a href="/weight/edit/@weight.WeightId">Edit</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private bool loading = true;
+    private List<WeightDto> weights = new List<WeightDto>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        weights = await Http.GetFromJsonAsync<List<WeightDto>>("api/weight");
+        loading = false;
+    }
+}

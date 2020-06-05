@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BlazorWeightTracker.Shared;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,9 +15,19 @@ namespace BlazorWeightTracker.Server.Controllers
     {
         // GET: api/values
         [HttpGet]
-        public IEnumerable<string> Get()
+        public List<WeightDto> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new List<WeightDto>()
+            {
+                new WeightDto()
+                {
+                    WeightId=1,
+                    Created=DateTime.UtcNow,
+                    KgValue=80,
+                    Unit= WeightUnit.Kg,
+                    UserId= Guid.NewGuid()
+                }
+            };
         }
 
         // GET api/values/5
