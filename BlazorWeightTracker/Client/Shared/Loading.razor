@@ -1,0 +1,21 @@
+﻿@using System.Threading;
+
+@if (IsLoading)
+{
+    <div class="mx-auto" style="width: 200px;">
+        <div>
+            @Text
+        </div>
+        <div>
+            <img src="29.gif" />
+        </div>
+    </div>
+}
+
+@code{
+    [Parameter]
+    public bool IsLoading { get; set; }
+
+    [Parameter]
+    public string Text { get; set; } = "Loading";
+}
